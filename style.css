@@ -92,6 +92,10 @@ a{
     box-shadow: rgb(0, 0, 0, 0.1);
 }
 
+.signup_form{
+    display: none;
+}
+
 .form_close{
     position: absolute;
     top: 10px;
@@ -115,7 +119,18 @@ a{
     border: none;
     outline: none;
     padding:0 30px;
+    color: #333;
+    transition: all 0.2s ease;
     border-bottom: 1.5px solid #aaaaaa;
+}
+
+.input_box input:focus{
+    border-bottom: 1.5px solid #7d2ae8;
+}
+
+.input_box input:focus ~ .fa-envelope,
+.input_box input:focus ~ .fa-lock{
+    color: #7d2ae8;
 }
 
 .input_box i{
@@ -134,4 +149,48 @@ a{
 .input_box .fa-eye-slash{
     right: 0;
     font-size: 18px;
+}
+
+.option_field{
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form_container a{
+    color: #7d2ae8;
+    font-size: 12px;
+}
+
+.checkbox{
+    display: flex;
+    column-gap: 8px;
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+.checkbox input{
+    accent-color: #7d2ae8;
+}
+
+.checkbox .label{
+    font-size: 12px;
+    cursor: pointer;
+    user-select: none;
+    color: #0b0217;
+}
+
+.form_container .button{
+    background: #7d2ae8;
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+.login_signup{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 15px;
 }
