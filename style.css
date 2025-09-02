@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    font-size: 24px;
+    color: cyan
+}
+
+.header{
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    z-index: 100;
+    padding: 0 20px;
+}
+
+.header .nav{
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav-logo{
+    font-size: 25px;
+}
+
+.nav{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.nav-items{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    column-gap: 25px;
+    text-decoration: none;
+}
+
+.nav .nav-items a,
+.button{
+    color: white;
+}
+
+.nav .nav-items a:hover{
+    color: #d9d9d9;
+}
+
+.button{
+    padding: 6px 24px;
+    border: 2px solid #ffff;
+    background-color: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.button:active{
+    transform: scale(0.8);
+}
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/photo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.form_container{
+    position: absolute;
+    max-width: 320px;
+    width: 300 px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 101;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: rgb(0, 0, 0, 0.1);
+}
+
+.form_close{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #0b0217;
+    font-size: 22px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.input_box{
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+}
+
+.input_box input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding:0 30px;
+    border-bottom: 1.5px solid #aaaaaa;
+}
+
+.input_box i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.input_box .fa-envelope,
+.input_box .fa-lock{
+    left: 0;
+    color: #707070;
+}
+
+.input_box .fa-eye-slash{
+    right: 0;
+    font-size: 18px;
+}
